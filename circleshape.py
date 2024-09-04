@@ -1,5 +1,6 @@
 import pygame
 
+
 class CircleShape(pygame.sprite.Sprite):
     def __init__(self, x, y, radius):
         if hasattr(self, "containers"):
@@ -7,15 +8,14 @@ class CircleShape(pygame.sprite.Sprite):
         else:
             super().__init__()
 
-            self.position = pygame.Vector2(x, y)
-            self.velocity = pygame.Vector2(0,0)
-            self.radius = radius
+        self.position = pygame.Vector2(x, y)
+        self.velocity = pygame.Vector2(0, 0)
+        self.radius = radius
 
     def draw(self, screen):
-        #sub classes must overide
+        # sub classes must overide
         pass
 
     def update(self, dt):
-        #ditto
+        # ditto
         pass
-        
